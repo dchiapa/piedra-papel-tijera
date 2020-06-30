@@ -7,10 +7,12 @@ class Alert {
   }
   render() {
     this.content.innerHTML = `
-    <p class="${this.classList}">${this.msg}</p>
+    <p>${this.msg}</p>
     <span class="alertBtn">Ok</span>
     `;
-    this.content.classList.add('alertContainer');
+    this.classList.forEach(classes => {
+      this.content.classList.add(classes);
+    });
     document.querySelector('body').appendChild(this.content);
   }
   action() {
