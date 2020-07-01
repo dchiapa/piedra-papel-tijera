@@ -1,13 +1,4 @@
 // Variables
-const usuario = document.querySelector('.usuario');
-const IA = document.querySelector('.IA');
-const jugadaUsuario = usuario.querySelector('img');
-const jugadaIA = IA.querySelector('img');
-const elijeUsuario = document.querySelector('#opciones');
-const puntajeUsuario = document.querySelector('#puntosUsuario').firstChild;
-const puntajeIA = document.querySelector('#puntosIA').firstChild;
-
-
 let puntosUsuario = 0;
 let puntosIA = 0;
 let eleccionUsuario;
@@ -18,38 +9,9 @@ let ganador = '';
 
 // EventListeners
 elijeUsuario.addEventListener('click', seleccionUsuario);
-menuToggle.addEventListener('click', cambioMenu);
-menuReglas.addEventListener('click', verReglas);
-menuReset.addEventListener('click', reset);
 
 // Funciones
-/*          Menu          */
-
-
 /*          App          */
-
-function seleccionUsuario(e) {
-  e.stopPropagation();
-  elijeUsuario.removeEventListener('click', seleccionUsuario);
-  switch (e.target.id) {
-    case 'usuPiedra':
-      eleccionUsuario = 0;
-      break;
-    case 'usuPapel':
-      eleccionUsuario = 1;
-      break;
-    case 'usuTijera':
-      eleccionUsuario = 2;
-      break;
-  }
-  eleccionIA = seleccionIA();
-  juego(eleccionIA, eleccionUsuario);
-}
-function seleccionIA() {
-  eleccionIA = Math.floor(Math.random() * (3 - 0)) + 0;
-  return eleccionIA;
-}
-
 function juego(eleccionIA, eleccionUsuario) {
   if (eleccionIA == eleccionUsuario) {
     ganador = 'Empate';
