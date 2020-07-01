@@ -1,7 +1,5 @@
 class Menu {
   constructor() {
-    this.menu = document.querySelector('#site-nav');
-    this.menuToggle = document.querySelector('#menu-toggle');
     this.menuReglas = document.querySelector('#menuInfo');
     this.menuReset = document.querySelector('#menuReset');
   }
