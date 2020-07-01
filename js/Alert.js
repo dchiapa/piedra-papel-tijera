@@ -15,5 +15,8 @@ class Alert {
   action() {
     this.content = document.querySelector('.alertContainer');
     document.querySelector('body').removeChild(this.content);
+    juego.jugadaBot.setAttribute('src', './img/vacio.png');
+    juego.jugadaUsuario.setAttribute('src', './img/vacio.png');
+    juegoUsuario.addEventListener('click', juego.usuario);
   }
 }
