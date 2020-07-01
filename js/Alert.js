@@ -1,13 +1,10 @@
 class Alert {
-  constructor(msg, classList) {
+  render(msg, classList) {
+    this.content = document.createElement('div');
     this.msg = msg;
     this.classList = classList;
-    this.content = document.createElement('div');
-    this.render();
-  }
-  render() {
     this.content.innerHTML = `
-    <p>${this.msg}</p>
+    <p class="alertParrafo">${this.msg}</p>
     <span class="alertBtn">Ok</span>
     `;
     this.classList.forEach(classes => {
