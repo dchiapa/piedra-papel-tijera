@@ -11,11 +11,14 @@ class Menu {
   }
   reset(e) {
     e.preventDefault();
-    console.log('reset');
+    if (juego.puntajeBot) {
+      juego.puntajeBot.nodeValue = 0;
+      juego.puntajeUsuario.nodeValue = 0;
+    }
   }
   reglas(e) {
     e.preventDefault();
-    let verReglas = new Alert(`
+    alert.render(`
     <h2>Reglas de juego</h2>
       <ul>
         <li>
@@ -39,6 +42,6 @@ según las siguientes reglas:</p>
         </li>
       </ul>
     `, ['alertContainer', 'reglasContainer']);
-    document.querySelector('.alertBtn').addEventListener('click', verReglas.action);
+    document.querySelector('.alertBtn').addEventListener('click', alert.action);
   }
 }

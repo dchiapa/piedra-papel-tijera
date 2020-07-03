@@ -5,7 +5,7 @@ class Juego {
   }
   usuario(e) {
     e.stopPropagation();
-    this.usuario = document.querySelector('.usuario');
+    this.juegoUsuario = document.querySelector('.jugadaUsuario');
     switch (e.target.id) {
       case 'piedra':
         this.eleccionUsuario = 0;
@@ -22,12 +22,12 @@ class Juego {
     this.eleccionBot = Math.floor(Math.random() * 3);
   }
   partida(eleccionUsuario, eleccionBot) {
-    this.bot = document.querySelector('.bot');
+    this.juegoBot = document.querySelector('.jugadaBot');
     this.eleccionBot = eleccionBot;
-    this.jugadaBot = this.bot.querySelector('img');
+    this.jugadaBot = this.juegoBot.querySelector('img');
     this.puntajeBot = document.querySelector('#puntosBot').firstChild;
     this.eleccionUsuario = eleccionUsuario;
-    this.jugadaUsuario = this.usuario.querySelector('img');
+    this.jugadaUsuario = this.juegoUsuario.querySelector('img');
     this.puntajeUsuario = document.querySelector('#puntosUsuario').firstChild;
     if (this.eleccionBot == this.eleccionUsuario) {
       this.mensaje = 'Empate';
