@@ -4,6 +4,14 @@ Clásico juego 'Piedra, papel o tijera', donde el usuario interactua con la IA p
 
 Realizado con HTML5, CSS3 y JS.
 
+v 2.0
+js convertir a clases, mejorar diseño.
+
+ - Clases de Menu, Alert y Juego.
+ - Manejado por archivo app.js
+ - Crear breakpoints para cambiar diseño segun tamaño de dispsitivo.
+ - Mejorar diseño general, cambiando reglas y medidas relativas.
+
 v 1.0
 
 - Menu:
