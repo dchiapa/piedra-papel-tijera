@@ -1,4 +1,34 @@
 /*     Archivo de estilos para el menu de navigación     */
+@font-face{
+  font-family: 'Roboto';
+  src: local('funtes/Roboto-Regular.ttf')
+}
+
+header{
+  background-color: #557e7c;
+  color: #ebebd3;
+  padding: 1em;
+  position: relative;
+}
+
+header::after{
+  clear: both;
+  content: '';
+  display: block;
+}
+
+#logo{
+  float: left;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#logo span{
+  font-weight: 300;
+}
+
 #site-nav {
   background: #464655;
   font-family: 'Roboto';
@@ -6,7 +36,6 @@
   position: absolute;
   right: 0;
   top: 100%;
-  width: 70%;
 }
 .site-nav{
   height: 0;
@@ -15,32 +44,31 @@
 .site-nav-open{
   height: auto;
 }
-#site-nav ul {
+#site-nav ul{
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#site-nav li {
+#site-nav li{
   border-bottom: 1px solid #575766;
 }
 #site-nav li:last-child{
   border-bottom: none;
 }
 
-#site-nav a {
+#site-nav a{
   color: #ebebd3;
   display: block;
   padding: 2em 6em;
   text-decoration: none;
   text-transform: uppercase;
 } 
-#site-nav a:hover,
-#site-nav a:focus{
+#site-nav a:hover{
   background-color: #e4b363;
   color: #464655;
 }
-#site-nav img {
+#site-nav img{
   display: inline-block;
   font-size: 1.5em;
   height: 20px;
@@ -84,7 +112,7 @@ transform: translateY(-3px) rotate(-90deg);
   transform: translateY(3px);
 }
 
-@media (min-width:842px){
+@media (min-width:793px){
   #menu-toggle{
     display: none;
   }
@@ -103,8 +131,7 @@ transform: translateY(-3px) rotate(-90deg);
     margin-left: 3em;
     padding: 0;
   }
-  #site-nav a:hover,
-  #site-nav a:focus{
+  #site-nav a:hover{
   background: transparent;
   color: #e4b363;
   }
