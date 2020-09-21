@@ -1,0 +1,64 @@
+/******************************/
+/*          Variables         */
+/******************************/
+/*            Fonts           */
+@font-face {
+  font-family: 'Roboto';
+  src: local("funtes/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: 'Lato';
+  src: local("funtes/Lato-Regular.ttf");
+}
+/*           Colors           */
+.muestra--color {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.muestra--color1 {
+  background-color: #65ebac;
+}
+.muestra--color2 {
+  background-color: #4f71d3;
+}
+.muestra--color3 {
+  background-color: #ffa733;
+}
+.muestra--color4 {
+  background-color: #e5e5e5;
+}
+.muestra--color5 {
+  background-color: #bfbfbf;
+}
+.muestra--color6 {
+  background-color: #7f7f7f;
+}
+.muestra--color7 {
+  background-color: #3f3f3f;
+}
+.muestra--color8 {
+  background-color: #191919;
+}
+
+/******************************/
+/*           Mixins           */
+/******************************/
+/******************************/
+/*          Functions         */
+/******************************/
+/******************************/
+/*           Alerts           */
+/******************************/
+/******************************/
+/*           Header           */
+/******************************/
+/******************************/
+/*            Menu            */
+/******************************/
+/******************************/
+/*            Main            */
+/******************************/
+/******************************/
+/*           Footer           */
+/******************************/
