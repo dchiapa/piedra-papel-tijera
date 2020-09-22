@@ -1,0 +1,26 @@
+/******************************/
+/*            Texts           */
+/******************************/
+
+/*           Headers          */
+h1,h2,h3,h4,h5,h6{
+  font-family : "Rubik", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2{
+  font-size: $Font-size * 1.85;
+}
+h3{
+  font-size: $Font-size * 1.68;
+}
+h4{
+  font-size: $Font-size * 1.51;
+}
+h5{
+  font-size: $Font-size * 1.34;
+}
+h6{
+  font-size: $Font-size * 1.17;
+}
