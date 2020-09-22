@@ -4,16 +4,16 @@
 
 /*            Fonts           */
 @font-face {
-  font-family: 'Roboto';
-  src: local('funtes/Roboto-Regular.ttf');
+  font-family: 'Karla';
+  src: url('../fuentes/Karla-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Lato';
-  src: local('funtes/Lato-Regular.ttf');
+  font-family: 'Rubik';
+  src: url('../fuentes/Rubik-Regular.ttf') format('truetype');
 }
-$Fuente1: 'Roboto', sans-serif;
-$Fuente2: 'Lato', sans-serif;
-
+$Font1: 'Karla', sans-serif;
+$Font2: 'Rubik', sans-serif;
+$Font-size: 16px;
 /*           Colors           */
 $Color-primary: #65ebac;
 $Color-secondary: #4f71d3;
@@ -24,33 +24,3 @@ $Color-lightGrey: lighten($Color-grey, 25%);
 $Color-darkGrey: darken($Color-grey, 25%);
 $Color-lightherGrey: lighten($Color-grey, 40%);
 $Color-darkerGrey: darken($Color-grey, 40%);
-
-.muestra--color{
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  &1{
-    background-color: $Color-primary;
-  }
-  &2{
-    background-color: $Color-secondary;
-  }
-  &3{
-    background-color: $Color-tertiary;
-  }
-  &4{
-    background-color: $Color-lightherGrey;
-  }
-  &5{
-    background-color: $Color-lightGrey;
-  }
-  &6{
-    background-color: $Color-grey;
-  }
-  &7{
-    background-color: $Color-darkGrey;
-  }
-  &8{
-    background-color: $Color-darkerGrey;
-  }
-}
