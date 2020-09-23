@@ -81,3 +81,43 @@
     transform: scale(1);
   }
 }
+@keyframes menu-active {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(2.4rem);
+  }
+  40% {
+    transform: translateY(4.8rem);
+  }
+  60% {
+    transform: translateY(7.2rem);
+  }
+  80% {
+    transform: translateY(9.6rem);
+  }
+  100% {
+    transform: translateY(12rem);
+  }
+}
+@keyframes menu-not-active {
+  0% {
+    transform: translateY(12rem);
+  }
+  20% {
+    transform: translateY(9.6rem);
+  }
+  40% {
+    transform: translateY(7.2rem);
+  }
+  60% {
+    transform: translateY(4.8rem);
+  }
+  80% {
+    transform: translateY(2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
