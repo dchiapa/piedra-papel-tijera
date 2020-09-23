@@ -22,4 +22,8 @@
     border-radius: 10px;
     color: $Color-tertiary;
   }
+  &--a:hover {
+    border-radius: 40px;
+    font-size: 2rem;
+  }
 }
