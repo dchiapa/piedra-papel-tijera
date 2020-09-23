@@ -4,23 +4,30 @@
 
 /*            Fonts           */
 @font-face {
-  font-family: 'Karla';
-  src: url('../fuentes/Karla-Regular.ttf') format('truetype');
+  font-family: "Karla";
+  src: url("../fuentes/Karla-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Rubik';
-  src: url('../fuentes/Rubik-Regular.ttf') format('truetype');
+  font-family: "Rubik";
+  src: url("../fuentes/Rubik-Regular.ttf") format("truetype");
 }
-$Font1: 'Karla', sans-serif;
-$Font2: 'Rubik', sans-serif;
+$Font1: "Karla", sans-serif;
+$Font2: "Rubik", sans-serif;
 $Font-size: 16px;
+
 /*           Colors           */
 $Color-primary: #65ebac;
 $Color-secondary: #4f71d3;
 $Color-tertiary: #ffa733;
 
-$Color-grey: rgb(127,127,127);
+$Color-grey: rgb(127, 127, 127);
 $Color-lightGrey: lighten($Color-grey, 25%);
 $Color-darkGrey: darken($Color-grey, 25%);
 $Color-lightherGrey: lighten($Color-grey, 40%);
 $Color-darkerGrey: darken($Color-grey, 40%);
+
+/*           Querys           */
+$Query-s-min: 576px;
+$Query-m-min: 768px;
+$Query-l-min: 992px;
+$Query-xl-min: 1200px;
