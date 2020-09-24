@@ -3,5 +3,27 @@
 /******************************/
 main {
   background-color: $Color-primary;
-  height: 80%;
+  display: grid;
+  grid-template-areas:
+    "puntaje"
+    "juego"
+    "usuario";
+  gap: 5px;
+  height: 100%;
+}
+.puntaje,
+.juego,
+.jugada {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  &--titulo {
+    height: 2.5rem;
+    width: 100%;
+  }
+  &--usuario,
+  &--ia {
+    width: 50%;
+  }
 }
