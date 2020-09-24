@@ -186,7 +186,32 @@ h6 {
 /******************************/
 main {
   background-color: #65ebac;
-  height: 80%;
+  display: grid;
+  grid-template-areas: "puntaje" "juego" "usuario";
+  gap: 5px;
+  height: 100%;
+}
+
+.puntaje,
+.juego,
+.jugada {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.puntaje--titulo,
+.juego--titulo,
+.jugada--titulo {
+  height: 2.5rem;
+  width: 100%;
+}
+.puntaje--usuario, .puntaje--ia,
+.juego--usuario,
+.juego--ia,
+.jugada--usuario,
+.jugada--ia {
+  width: 50%;
 }
 
 /******************************/
@@ -197,8 +222,6 @@ main {
   flex-direction: column;
   height: 6rem;
   width: 100%;
-  position: absolute;
-  bottom: 0;
   align-items: center;
   justify-content: center;
   padding: 0 10%;
