@@ -193,9 +193,9 @@ main img {
   width: 40%;
 }
 
-.puntaje,
 .juego,
-.jugada {
+.jugada,
+.puntaje {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -204,17 +204,17 @@ main img {
   height: 25%;
   margin: 1rem 0;
 }
-.puntaje--titulo,
 .juego--titulo,
-.jugada--titulo {
+.jugada--titulo,
+.puntaje--titulo {
   height: 2.5rem;
   width: 100%;
 }
-.puntaje--usuario, .puntaje--ia,
-.juego--usuario,
-.juego--ia,
+.juego--usuario, .juego--ia,
 .jugada--usuario,
-.jugada--ia {
+.jugada--ia,
+.puntaje--usuario,
+.puntaje--ia {
   width: 50%;
 }
 
@@ -225,6 +225,21 @@ main img {
 .jugada img {
   height: auto;
   width: 20%;
+}
+
+.puntaje span {
+  font-size: 2rem;
+}
+
+.loader {
+  border: 10px solid #4f71d3;
+  border-radius: 50%;
+  border-top: 10px solid #ffa733;
+  width: 90px;
+  height: 90px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
 }
 
 /******************************/
@@ -371,5 +386,15 @@ main img {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
